@@ -8,6 +8,17 @@ package chapter02;
 
 public class PrimitiveTypesExercise {
     public static void main(String[] args){
-        
+        double totalExpense;
+        double januaryExpense = 15000.00;
+        double februaryExpense = 23000.00;
+        double marchExpense = 17000.00;
+
+        totalExpense = januaryExpense + februaryExpense + marchExpense;
+
+        System.out.printf("A despesa total foi de: R$%.2f%n" , totalExpense);
+
+        double averageMonthlyExpenses = totalExpense/3;
+
+        System.out.printf("A média mensal de gastos foi de: R$%.2f%n", averageMonthlyExpenses);
     }
 }
