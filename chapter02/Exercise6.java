@@ -14,7 +14,7 @@ public class Exercise6 {
         while (firstElement + secondElement <= 100){
             aux = secondElement;
             secondElement = firstElement + secondElement;
-            firstElement = secondElement;
+            firstElement = aux;
             System.out.print(secondElement + ", ");
         }
         System.out.print(firstElement + secondElement);
